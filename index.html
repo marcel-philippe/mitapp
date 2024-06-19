@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Aplicativos Mobile com MIT App Inventor</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .header {
+            background-color: #a42869;
+            /* Roxo */
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-alt {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .section-primary {
+            background-color: #2c6e49;
+            /* Verde */
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        .section-dark {
+            background-color: #333;
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .course-info {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial {
+            background-color: #ffffff;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #333;
+        }
+
+        .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .checklist-item {
+            list-style: none;
+            padding-left: 1.5em;
+            text-indent: -1.5em;
+        }
+
+        .checklist-item::before {
+            content: "✓";
+            color: #a42869;
+            /* Roxo */
+            padding-right: 0.5em;
+        }
+
+        .benefit-icon {
+            font-size: 3em;
+            color: #f57c00;
+            /* Laranja */
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #2c6e49;
+            /* Verde */
+            border-color: #2c6e49;
+            /* Verde */
+        }
+
+        .btn-primary:hover {
+            background-color: #25543a;
+            /* Tom mais escuro de verde */
+            border-color: #25543a;
+            /* Tom mais escuro de verde */
+        }
+    </style>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #f57c00;">
+        <!-- Laranja -->
+        <a class="navbar-brand" href="#">Curso de Aplicativos Mobile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre o Curso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aprender">O que Você Aprenderá</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#beneficios">Benefícios Extras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#inscricao">Inscrição</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contatos">Contatos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Criação de Aplicativos Mobile com MIT App Inventor</h1>
+            <h3>Transforme suas ideias em realidade</h3>
+        </div>
+    </header>
+
+    <!-- Sobre o Curso -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="course-info">
+                        <h2>Sobre o Curso</h2>
+                        <p><strong>MIT App Inventor</strong> é uma plataforma para desenvolvimento de aplicativos
+                            mobile de forma simples e intuitiva, sem necessidade de programação complexa.</p>
+                        <p><strong>Carga Horária:</strong> 40 Horas</p>
+                        <p><strong>Quando:</strong> Encontros de segunda a sexta-feira, das 19h às 21h (online)</p>
+                        <p><strong>Como:</strong> Do seu laptop para o seu smartphone</p>
+                        <p><strong>Quanto:</strong> <span style="text-decoration: line-through;">R$ 199,00</span> <strong
+                                style="color: #f57c00;">R$ 99,00</strong> no boleto bancário</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Imagem ou vídeo relacionado ao curso -->
+                    <img src="imagem_curso.jpg" alt="Curso MIT App Inventor" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que você aprenderá -->
+    <section id="aprender" class="section-alt">
+        <div class="container">
+            <h2 class="text-center mb-5">O que Você Aprenderá</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li class="checklist-item">Criar aplicativos com o MIT App Inventor sem Codificação</li>
+                        <li class="checklist-item">Criar um app de Dicionário com Imagem, Busca e Som</li>
+                        <li class="checklist-item">Criar um app Editor de Imagens salvando a Imagem no Celular</li>
+                        <li class="checklist-item">Criar um app de Caderno de Receitas com Tiny DB</li>
+                        <li class="checklist-item">Trabalhar com Botões, Títulos, Formulários e Menus</li>
+                        <li class="checklist-item">Operar Listas Paralelas e Listviews</li>
+                        <li class="checklist-item">Usar mídias de Som, Imagem e Fotos</li>
+                        <li class="checklist-item">Ajustar Alinhamento de Elementos, Tela Cheia e Scroll Down</li>
+                        <li class="checklist-item">Criar um app de Caderno de Receitas com Tiny DB</li>
+                        <li class="checklist-item">Fazer Operações de Adicionar, Editar e Excluir Dados em Banco de Dados Local Tiny DB</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li class="checklist-item">Propriedades de Componentes e Alinhamentos</li>
+                        <li class="checklist-item">Tela de Abertura com Contagem Regressiva</li>
+                        <li class="checklist-item">Listas Paralelas</li>
+                        <li class="checklist-item">ListViews Dinâmicas</li>
+                        <li class="checklist-item">TinyDB para salvar dados na memória</li>
+                        <li class="checklist-item">Adicionar Receitas Novas</li>
+                        <li class="checklist-item">Editar ou Excluir Receitas existentes</li>
+                        <li class="checklist-item">Alertas com Botões na Tela</li>
+                        <li class="checklist-item">Configurar projetos com Fusion Tables e Tabelas</li>
+                        <li class="checklist-item">Cadastro de Usuários com Validação de Campos</li>
+                        <li class="checklist-item">Busca em Banco de Dados</li>
+                        <li class="checklist-item">Lista (Listview) preenchida por Banco de Dados</li>
+                        <li class="checklist-item">Tela de Detalhes de Produtos do Banco de Dados</li>
+                        <li class="checklist-item">Atualizar Dados do Usuário</li>
+                        <li class="checklist-item">Cadastrar, Editar, Visualizar e Excluir Classificados</li>
+                        <li class="checklist-item">Dicas de Performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Benefícios Extras -->
+    <section id="beneficios" class="section-primary">
+        <div class="container">
+            <h2 class="text-center mb-5">Benefícios Extras</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-headset benefit-icon"></i>
+                    <h4>Suporte Online</h4>
+                    <p>Suporte online durante todo o curso</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-book benefit-icon"></i>
+                    <h4>Materiais Exclusivos</h4>
+                    <p>Acesso a materiais exclusivos</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-certificate benefit-icon"></i>
+                    <h4>Certificado</h4>
+                    <p>Certificado de conclusão</p>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-4">
+                    <i class="fas fa-users benefit-icon"></i>
+                    <h4>Comunidade Ativa</h4>
+                    <p>Comunidade ativa para networking</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-briefcase benefit-icon"></i>
+                    <h4>Projetos Práticos</h4>
+                    <p>Projetos práticos para o portfólio</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-video benefit-icon"></i>
+                    <h4>Aulas Gravadas</h4>
+                    <p>Aulas gravadas para revisão</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inscrição -->
+    <section id="inscricao" class="section-alt">
+        <div class="container">
+            <h2 class="text-center mb-5">Inscreva-se Agora</h2>
+            <div class="text-center">
+                <p class="lead">Garanta sua vaga por apenas <strong style="color: #f57c00;">R$ 99,00</strong> no boleto
+                    bancário</p>
+                <a href="#" class="btn btn-primary btn-lg">Inscreva-se Já</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">O que nossos alunos dizem</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <img src="https://via.placeholder.com/100" alt="Aluno 1">
+                        <p>"O curso foi incrível! Aprendi a criar aplicativos de forma prática e divertida."</p>
+                        <strong>- João Silva</strong>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <img src="https://via.placeholder.com/100" alt="Aluno 2">
+                        <p>"Recomendo a todos que queiram entrar no mundo dos aplicativos mobile. Excelente conteúdo!"</p>
+                        <strong>- Maria Fernanda</strong>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <img src="https://via.placeholder.com/100" alt="Aluno 3">
+                        <p>"Os instrutores são muito atenciosos e o material é de alta qualidade."</p>
+                        <strong>- Pedro Henrique</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatos -->
+	<section id="contatos" class="section-alt">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-6">
+					<h2>Contatos</h2>
+					<p><strong>Endereço:</strong> Rua Rio de Janeiro, nº 471, 13º andar, Centro, Belo Horizonte</p>
+					<p><strong>Whatsapp:</strong> (31) 99955-4185</p>
+					<p><strong>E-mail:</strong> senaictti@fiemg.com.br</p>
+					<p><strong>Instagram:</strong> @senaictti</p>
+				</div>
+				<div class="col-md-6">
+					<!-- Mapa do Google incorporado -->
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.050828875652!2d-43.93357868456113!3d-19.926838085137467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1e1f1a80f8ad7954!2sRua%20Rio%20de%20Janeiro%2C%20471%20-%201301%20-%20Centro%2C%20Belo%20Horizonte%20-%20MG%2C%2030130-041!5e0!3m2!1sen!2sbr!4v1624114791450!5m2!1sen!2sbr"
+						width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Curso de Aplicativos Mobile. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
